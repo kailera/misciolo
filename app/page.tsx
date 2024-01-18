@@ -1,12 +1,11 @@
-import Navbar from "@/components/Navbar"
-import Products from "./products/page"
-import Product from "./products/page"
+import ProductsPage from "@/containers/products-page";
 
-export default function Home (){
+
+export default function Home() {
+  
   return (
-  <>
-    <Navbar/>
-    <Products />
-  </>
-  )
+    <>
+    <ProductsPage searchParams={{}}/>
+    </>
+  );
 }

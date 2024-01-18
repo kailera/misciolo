@@ -1,0 +1,95 @@
+{
+    "products":[
+        {
+          "id": 1,
+          "titulo": "Margherita",
+          "descricao": "Molho de tomate, mussarela, manjericão fresco",
+          "tamanho": ["Pequena", "Média", "Grande"],
+          "preco": [15.99, 18.99, 22.99],
+          "bordas": ["Cheddar", "Catupiry", "Mussarela"],
+          "quantidadePedidos": 0
+        },
+        {
+          "id": 2,
+          "titulo": "Calabresa",
+          "descricao": "Molho de tomate, mussarela, calabresa fatiada",
+          "tamanho": ["Média", "Grande"],
+          "preco": [20.99, 25.99],
+          "bordas": ["Catupiry", "Mussarela"],
+          "quantidadePedidos": 0
+        },
+        {
+          "id": 3,
+          "titulo": "Quatro Queijos",
+          "descricao": "Molho de tomate, mussarela, provolone, gorgonzola, parmesão",
+          "tamanho": ["Pequena", "Grande"],
+          "preco": [17.99, 24.99],
+          "bordas": ["Cheddar", "Catupiry"],
+          "quantidadePedidos": 0
+        },
+        {
+          "id": 4,
+          "titulo": "Frango com Catupiry",
+          "descricao": "Molho de tomate, frango desfiado, catupiry",
+          "tamanho": ["Média", "Grande"],
+          "preco": [22.99, 27.99],
+          "bordas": ["Catupiry"],
+          "quantidadePedidos": 0
+        },
+        {
+          "id": 5,
+          "titulo": "Portuguesa",
+          "descricao": "Molho de tomate, mussarela, presunto, ovos, cebola, azeitonas",
+          "tamanho": ["Média", "Grande"],
+          "preco": [21.99, 26.99],
+          "bordas": ["Cheddar", "Mussarela"],
+          "quantidadePedidos": 0
+        },
+        {
+          "id": 6,
+          "titulo": "Vegetariana",
+          "descricao": "Molho de tomate, mussarela, cogumelos, pimentões, cebola, azeitonas",
+          "tamanho": ["Média", "Grande"],
+          "preco": [19.99, 23.99],
+          "bordas": ["Mussarela"],
+          "quantidadePedidos": 0
+        },
+        {
+          "id": 7,
+          "titulo": "Pepperoni",
+          "descricao": "Molho de tomate, mussarela, pepperoni",
+          "tamanho": ["Média", "Grande"],
+          "preco": [18.99, 24.99],
+          "bordas": ["Cheddar"],
+          "quantidadePedidos": 0
+        },
+        {
+          "id": 8,
+          "titulo": "Mexicana",
+          "descricao": "Molho de tomate, mussarela, carne moída, pimenta, milho, cebola",
+          "tamanho": ["Média", "Grande"],
+          "preco": [23.99, 29.99],
+          "bordas": ["Catupiry", "Mussarela"],
+          "quantidadePedidos": 0
+        },
+        {
+          "id": 9,
+          "titulo": "Marinara",
+          "descricao": "Molho de tomate, alho, azeite, orégano",
+          "tamanho": ["Pequena", "Média"],
+          "preco": [16.99, 20.99],
+          "bordas": ["Cheddar", "Catupiry"],
+          "quantidadePedidos": 0
+        },
+        {
+          "id": 10,
+          "titulo": "Bacon Lovers",
+          "descricao": "Molho de tomate, mussarela, bacon, cebola caramelizada",
+          "tamanho": ["Média", "Grande"],
+          "preco": [25.99, 30.99],
+          "bordas": ["Bacon", "Cheddar"],
+          "quantidadePedidos": 0
+        }
+      ]
+      
+}
