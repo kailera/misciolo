@@ -1,37 +1,35 @@
-import ProductCard from "@/components/ProductCard"
-import { getAll } from "@/libs/endpoints"
-import axios from "axios"
-import { FC } from "react";
+import getAllProducts from "@/libs/getAllProducts";
+import TProduct from "@/types";
+import Link from "next/link";
 
 interface ProductsProps {
-  searchParams: { [key: string]: string | string[] | undefined };
+  products: any;
 }
 
-/*const getItems = async(
-  page:number,
-  perItem:number,
-  sort:string|boolean 
-)=>{
-  const data = await axios.get(getAll,{
-    page:page,
-    perItem:perItem,
-    sort:sort
-  });
-  return data;
+export default async function ProductsPage() {
+  const productData: Promise<TProduct[]> = getAllProducts();
+  const productList = await productData;
+
+  return (
+    <>
+      <div>
+        {productList.map((product) => (
+          <>
+            <Link href={`/products/${product.id}`}>
+              <br />
+              <h1>{product.titulo}</h1>
+              <p>{product.descricao}</p>
+              <p>bordas disponiveis:</p>
+              {product.bordas.map((border) => (
+                <>
+                  <p>{border}</p>
+                </>
+              ))}
+              <br />
+            </Link>
+          </>
+        ))}
+      </div>
+    </>
+  );
 }
-*/
-const Products: FC<ProductsProps> = async ({searchParams}) =>{
-
-  const page = typeof searchParams.page === "string" ? Number(searchParams.page):1;
-  const sort = typeof searchParams.sort === "string" ? searchParams.sort : false;
-  const itemsPerView = 5
-  //const items = await getItems(page, itemsPerView, sort)
-
-  return (<>
-    <div>
-      {/*<h1>Produtos encontrados: {items.size}</h1>*/}
-    </div>
-  </>)
-}
-
-export default Products
