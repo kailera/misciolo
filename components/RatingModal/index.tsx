@@ -1,5 +1,5 @@
-import React, { FC } from 'react';
-import Modal from 'react-modal';
+import { FC } from "react";
+import Modal from "react-modal";
 
 interface RatingModalProps {
   isOpen: any;
